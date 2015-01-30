@@ -20,7 +20,7 @@ get_header(); ?>
 					<p>Our Team consists of highly trained professionals specializing in new home sales, residential resale and investment properties. <a href="http://homes.crandallgroup.com/idx/14419/contact.php">Contact us now</a>, we do it all!</p>
 				</div>
 				<div class="large-6 columns">
-						<a href="http://homes.crandallgroup.com/idx/14419/contact.php"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/images/CrandallGroup-CALL-RECTANGLE.jpg"></a>
+						<a href="http://homes.crandallgroup.com/idx/14419/contact.php"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/images/crandall-home-call.jpg"></a>
 						<a href="http://homes.crandallgroup.com/idx/14419/advancedSearch.php"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/images/Search-For-Homes-Front-Page.jpg"></a>
             <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/images/home-tagline-cropped.jpg">
 				</div>	
