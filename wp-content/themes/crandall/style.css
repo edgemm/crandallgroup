@@ -1,0 +1,790 @@
+/*
+
+Theme Name: Crandall Group
+Theme URI: http://crandallgroup.com/
+Author: Edge Multimedia
+Author URI: http://edgemm.com/
+Description: Crandall Group theme, child of NOO Citilights
+Template: noo-citilights
+Version: 1.0.0
+*/
+
+/* ----- STRUCTURE ----- */
+html,
+body {
+	height: 100%;
+	background: #229e9a;
+}
+
+.container-wrap {
+	background: #fff;
+}
+
+/* ----- STYLES ----- */
+
+/* overlay variances */
+
+.bg-primary-overlay {
+	background: rgba( 183, 31, 54, 0.90);
+	background: rgba( 34, 158, 154, 0.90);
+	background: transparent;
+}
+.noo-vc-row.bg-image > .noo-vc-col {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: rgba( 34, 158, 154, 0.90);
+	z-index: 100;
+}
+[data-parallax="1"].parallax {
+	z-index: 0;
+}
+
+.bg-primary-overlay h1,
+.bg-primary-overlay h2,
+.bg-primary-overlay h3,
+.bg-primary-overlay h4,
+.bg-primary-overlay h5,
+.bg-primary-overlay h6,
+.bg-primary-overlay a {
+	color: #fff;
+}
+
+/* buttons */
+.btn-secondary,
+.btn-thirdary,
+.wpcf7-submit,
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a,
+.noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button,
+.properties .hentry .property-info .property-action a,
+.page-fullwidth .properties.list .property-fullwidth-action.property-action a,
+.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a,
+.recent-properties.recent-properties-featured .property-info .property-action a,
+.agents.grid .hentry .agent-wrap .agent-desc .agent-action a {
+	color: #157d66 !important;
+	color: #aff1e2 !important;
+	color: #893441 !important;
+	color: #cb6474 !important;
+	color: #770a1b !important;
+	color: #5c0512 !important;
+	color: #fff !important;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary,
+.btn-thirdary:hover,
+.btn-thirdary:focus,
+.btn-thirdary:active,
+.btn-thirdary.active,
+.open > .dropdown-toggle.btn-thirdary,
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open > .dropdown-toggle.btn-secondary, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default, .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info, .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .dropdown-toggle.btn-warning, .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger, .noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a:hover, .noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a:focus, .noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a:active, .noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a.active, .open > .dropdown-toggle.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a, .noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button:hover, .noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button:focus, .noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button:active, .noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button.active, .open > .dropdown-toggle.noo-map .gsearch .gsearch-content .gsearch-action .gsubmit button, .properties .hentry .property-info .property-action a:hover, .properties .hentry .property-info .property-action a:focus, .properties .hentry .property-info .property-action a:active, .properties .hentry .property-info .property-action a.active, .open > .dropdown-toggle.properties .hentry .property-info .property-action a, .page-fullwidth .properties.list .property-fullwidth-action.property-action a:hover, .page-fullwidth .properties.list .property-fullwidth-action.property-action a:focus, .page-fullwidth .properties.list .property-fullwidth-action.property-action a:active, .page-fullwidth .properties.list .property-fullwidth-action.property-action a.active, .open > .dropdown-toggle.page-fullwidth .properties.list .property-fullwidth-action.property-action a, .recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a:hover, .recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a:focus, .recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a:active, .recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a.active, .open > .dropdown-toggle.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a, .recent-properties.recent-properties-featured .property-info .property-action a:hover, .recent-properties.recent-properties-featured .property-info .property-action a:focus, .recent-properties.recent-properties-featured .property-info .property-action a:active, .recent-properties.recent-properties-featured .property-info .property-action a.active, .open > .dropdown-toggle.recent-properties.recent-properties-featured .property-info .property-action a, .agents.grid .hentry .agent-wrap .agent-desc .agent-action a:hover, .agents.grid .hentry .agent-wrap .agent-desc .agent-action a:focus, .agents.grid .hentry .agent-wrap .agent-desc .agent-action a:active, .agents.grid .hentry .agent-wrap .agent-desc .agent-action a.active, .open > .dropdown-toggle.agents.grid .hentry .agent-wrap .agent-desc .agent-action a, .agent-property .agents .conact-agent .form-action button:hover, .wpcf7-submit:hover, .wpcf7-submit:focus, .wpcf7-submit:active, .wpcf7-submit.active, .noo-map.no-map.search-vertical .gsearch .gsearch-content .gsearch-action .gsubmit button:hover, .open > .dropdown-toggle.wpcf7-submit{
+	background: #48bea3;
+	background: #db5368;
+}
+
+/* forms */
+input,
+textarea {
+	width: auto;
+	height: 50px;
+	padding: 8px;	
+	display: block;
+	font-size: 16px;
+	line-height: 1.5;
+	border: medium none;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	background: #fff;
+	color: #555;
+}
+
+
+/* ----- NAVIGATION ----- */
+
+.navbar-nav li > a:hover, .navbar-nav li > a:focus, .navbar-nav li:hover > a, .navbar-nav li.sfHover > a, .navbar-nav li.current-menu-item > a, .noo-topbar .topbar-inner .topbar-content a:hover, .noo-topbar .topbar-inner .noo-social a i:hover {
+	color: #229e9a;
+}
+
+
+/* ----- FOOTER ----- */
+
+.go-to-top {
+	display: none !important;
+}
+
+.noo-bottom-bar-content {
+	margin-top: 10px;
+}
+
+.colophon.site-info .footer-more {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+/* copyright/logos */
+
+.footer-licensing,
+.footer-copyright {
+	font-size: 0.75em !important;
+}
+.footer-licensing {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.noo-bottom-bar-content {
+	margin-top: 0;
+}
+
+.footer-associations {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-associations > li {
+	margin-left: 10px;
+	float: left;
+}
+.footer-associations > li:first-child {
+	margin-left: 0;
+}
+
+/* contact */
+
+.footer-contact-info {
+	float: right;
+	font-size: 0.85em;
+	text-align: left;
+}
+.footer-contact-info a {
+	color: #fff;
+}
+.footer-contact-info a:hover {
+	color: #edbbc3;
+}
+.footer-contact-info > div {
+	background: rgba( 183, 31, 54, 0.7 );	
+	background: rgba( 119, 10, 27, 0.7 );
+	background: rgba( 34, 158, 154, 0.7);
+	background: transparent;
+}
+.footer-contact-info > div i {
+	border-radius: 5px;
+	background: #b71f36;
+	background: #770a1b;
+	background: #229e9a;
+	background: #016f6b;
+}
+
+.footer-contact-info > .footer-contact-addr {
+	width: 100%;
+	margin-top: 0;
+	display: table;
+}
+.footer-contact-info > .footer-contact-addr > .footer-contact-icon {
+	width: 34px;
+	margin-right: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.footer-contact-info > .footer-contact-addr > .footer-contact-icon > i {
+	height: auto;
+}
+.footer-contact-addr-content {
+	display: table-cell;
+}
+
+/* footer */
+.colophon .footer-more {
+	background: #b71f36 !important;
+	background: #229e9a !important;
+	color: #fff !important;
+}
+
+/* ----- HOME ----- */
+.caroufredsel_wrapper {
+	cursor: default !important;
+	color: #fff;
+}
+.noo-slider .caroufredsel_wrapper .sliders .slide-item .slide-caption {
+	padding-left: 50px;
+}
+.slide-caption > p,
+.slide-caption > br {
+	display: none;
+}
+.slider-title {
+	margin-top: 12px;
+	color: #fff;
+}
+.slide-caption > .slider-content {
+	display: block;
+}
+
+.recent-properties .page-title {
+	font-weight: 300;
+}
+
+.hero-home {
+	position: relative;
+}
+.hero-overlay {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	font-size: 3em;
+	text-shadow: 1px 1px 0px rgba( 30, 30, 30, .25);
+	color: #fff;
+}
+
+/* ----- PROPERTIES ----- */
+
+.properties .hentry .property-detail > div.size span {
+  background: url("assets/images/size-icon.png") no-repeat scroll 0 center transparent;
+}
+.properties .hentry .property-detail > div.bathrooms span {
+  background: url("assets/images/bathroom-icon.png") no-repeat scroll 0 center transparent;
+}
+.properties .hentry .property-detail > div.bedrooms span {
+  background: url("assets/images/bedroom-icon.png") no-repeat scroll 0 center transparent;
+}
+
+/* listings */
+.properties-ordering .form-group:nth-child( 2 ) {
+	clear: none;
+}
+
+.properties-category-desc {
+	margin-top: -15px;
+	margin-bottom: 30px;
+}
+
+/* listings - no properties listed */
+.properties-content.no-properties {
+	margin-top: 30px;
+	padding: 24px 16px;
+	text-align: center;
+	background: #f9f9f9;
+}
+.no-properties-heading {
+	font-size: 34px;
+}
+.properties-category-desc.no-properties {
+	margin: 0;
+}
+
+.properties .hentry .property-info {
+	border-top: 0;
+}
+
+.properties .hentry .property-featured .property-category {
+	right: 15px;
+}
+.property-category-separator {
+	display: block;
+}
+
+.properties .hentry .property-info .property-action a:hover,
+.properties:not(.my-properties) .hentry .property-info .property-action:hover,
+.properties:not(.my-properties) .hentry .property-info .property-action:hover a {
+	background: #48bea3;
+	color: #157d66;
+	color: #aff1e2;
+	background: #db5368;
+	color: #770a1b;
+}
+.properties .hentry .property-featured .featured {
+	color: #b71f36;
+}
+
+
+/* single */
+.property-abovefold {
+	margin-bottom: 50px;
+	clear: both;
+	background: url('assets/images/property-abovefold-bg.png') repeat-y center top;
+}
+
+.property-abovefold .property-featured,
+.property-abovefold .property-contact {
+	background: transparent;
+}
+
+.property .property-featured {
+	margin-bottom: 0;
+	border-right: 10px solid #fff;
+}
+
+.thumbnails-wrap > .caroufredsel_wrapper,
+.thumbnails-wrap > .caroufredsel_wrapper > ul {
+	height: 81px !important;
+}
+.property-featured .thumbnails li {
+	padding-bottom: 0 !important;
+}
+
+.property-contact {
+	padding: 15px 15px 65px;
+	position: relative;
+	border-left: 10px solid #fff;
+}
+.property-contact-title {
+	margin-top: 0;
+}
+.property-contact-fields > p,
+.property-contact-fields .wpcf7-form-control-wrap {
+	margin: 0;
+}
+.wpcf7-form-control.property-contact-field:not(.wpcf7-submit) {
+	height: 32px;
+	margin: 0 0 12px;
+	padding: 4px 8px;
+}
+textarea.wpcf7-form-control.property-contact-field:not(.wpcf7-submit) {
+	height: auto;
+	max-height: 100px;
+	margin-bottom: 0;
+}
+.property-contact-submission {
+	margin-top: 12px;
+	margin-bottom: 0;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	text-align: center;
+}
+.wpcf7-form-control-wrap.property-contact-message-holder,
+.ajax-loader {
+	display: none !important;
+}
+.property-contact .wpcf7-response-output {
+	min-height: 12px;
+	margin-top: 0;
+	display: block !important;
+	border: none;
+	text-align: center;
+}
+
+.property-summary {
+	clear: left;
+}
+
+/* ----- BUILDERS ----- */
+
+/* listing */
+
+.builders-title {
+	margin-bottom: 10px;
+}
+
+.builder.hentry {
+	width: 47.5%;
+	margin: 20px 2.5% 0 0;
+	padding-bottom: 30px;
+	display: table;
+	table-layout: fixed;
+	float: left;
+	border: none;
+	box-sizing: border-box;
+}
+.builder.hentry:first-child {
+	margin-top: 20px;
+}
+.builder.hentry :nth-child( 2n ) {
+	margin-right: 0;
+	margin-left: 2.5%;
+}
+.builder.hentry :nth-child( 2n + 1 ) {
+	clear: left;
+}
+.builder-featured,
+.builder-wrap {
+	display: table-cell;
+	vertical-align: top;
+}
+.builder-featured {
+	width: 30%;
+}
+.builder-wrap {
+	padding-bottom: 50px;
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 0 0 4px;
+	-moz-border-radius: 0 0 4px;
+	border-radius: 0 0 4px;
+	background: #f9f9f9;
+}
+.builder-title {
+	margin: 5px 5px 5px 10px;
+	font-size: 24px;
+}
+.builder-fullwidth-excerpt {
+	margin: 0 5px 0 10px !important;
+}
+.builder-action > a {
+	width: 100%;
+	padding: 10px;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-weight: bold;
+	line-height: 24px;
+	border-color: #b71f36;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #b71f36;
+	color: #fff;
+}
+.builder-action > a:hover {
+	background: #db5368;
+}
+
+/* single */
+
+.builder-details {
+	width: 100%;
+	margin-bottom: 40px;
+	display: table;
+}
+.builder-details > [class^="builder"] {
+	padding: 0 10px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.builder-photo {
+	margin-bottom: 12px;
+}
+.builder-photo.photo-none {
+	min-width: 100px;
+	max-width: 300px;
+	border: 3px solid #ccc;
+	vertical-align: middle !important;
+	text-align: center;
+	background: #efefef;
+	color: #ccc;
+}
+.builder-bio {
+	display: block;
+	clear: left;
+}
+
+.builder-contact {
+	padding: 0 !important;
+}
+.builder-contact-info {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	line-height: 1.5em;
+	white-space: nowrap;
+	background: #efefef;
+}
+.builder-contact-info .fa,
+.builder-contact-info a {
+	color: #1e1e1e;
+}
+.builder-contact-info > [class^="contact"]:hover > .fa,
+.builder-contact-info a:hover {
+	color: #b71f36;
+}
+.builder-contact-info .fa {
+	margin-right: 10px;
+}
+
+
+/* ----- TEAM ----- */
+
+.form-group:nth-child( 2 ) {
+	clear: left;
+}
+.agents.grid .hentry .agent-wrap .agent-info > div {
+	display: block;
+}
+
+
+/* ------ MOBILE ----- */
+
+@media (min-width: 992px) {
+	
+/* properties - listings */
+.page-fullwidth .properties.list .property-fullwidth-info.property-info > div {
+	padding: 10px;
+}
+.page-fullwidth .properties.list .property-fullwidth-info.property-info > div.property-price {
+	text-align: center;
+}
+.page-fullwidth .properties.list .property-fullwidth-info.property-info > div.size span {
+      background: url("assets/images/size-icon.png") no-repeat scroll 0 center transparent;
+}
+.page-fullwidth .properties.list .property-fullwidth-info.property-info > div.bedrooms span {
+      background: url("assets/images/bedroom-icon.png") no-repeat scroll 0 center transparent;
+}
+.page-fullwidth .properties.list .property-fullwidth-info.property-info > div.bathrooms span {
+      background: url("assets/images/bathroom-icon.png") no-repeat scroll 0 center transparent;
+}
+.page-fullwidth .properties.list .property-fullwidth-action.property-action a {
+	height: 180px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+}
+
+@media (max-width: 991px) {
+
+/* cta */
+
+.noo-call-to-action {
+	text-align: center;
+}
+
+/* properties - single */
+.property-abovefold {
+	margin-bottom: 20px;
+	background: transparent;
+}
+
+.property-abovefold .property-featured,
+.property-abovefold .property-contact {
+	margin-bottom: 20px;
+	border: none;
+	background: #f6f6f6;
+}
+.property .property-detail {
+	margin-right: 15px;
+}
+
+
+/* builders */
+.builder {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+	margin-left: 0 !important;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* properties */
+
+.properties.grid .hentry {
+	width: 30%;
+	margin-right: 0;
+	margin-left: 5%;
+	clear: none !important;
+}
+.properties.grid .hentry:first-child {
+	margin-left: 0;
+}
+
+}
+
+@media (min-width: 768px) {
+
+/* footer */
+
+.footer-more .col-md-6 {
+	width: 50%;
+	float: left;
+}
+
+}
+
+@media (max-width: 767px) {
+	
+/* structure */
+.container-boxed.offset {
+	margin: 0 auto;^
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+	
+/* buttons */
+.btn {
+	white-space: normal;
+}
+
+
+/* footer */
+
+.footer-more .col-md-6 {
+	text-align: center;
+}
+
+.footer-first {
+	padding-top: 165px;
+}
+.footer-last {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.footer-associations > li {
+	display: inline;
+	float: none;
+}
+
+.footer-contact-info {
+	max-width: 250px;
+	margin: 25px auto 0;
+	float: none;
+}
+.footer-contact-info > [class^="footer-contact"] {
+	margin: 12px 0 0;
+}
+
+/* sliders */
+.noo-slider .caroufredsel_wrapper .sliders .slide-item .slide-caption {
+	padding-left: 10px;
+}
+
+/* properties - listings */
+
+.properties {
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.properties .hentry {
+	margin-bottom: 30px !important;
+}
+
+/* properties - single */
+.property-abovefold {
+	margin-bottom: 0;
+}
+
+.property .property-desc {
+	width: auto;
+	margin: 0 15px;
+}
+.property-category-separator {
+	display: none;
+}
+
+/* builders */
+.builder-details,
+.builder-details > [class^="builder"] {
+	display: block;
+}
+.builder-photo {
+	float: none;
+}
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+/* properties */
+.page-fullwidth .properties.list .property-wrap {
+	vertical-align: bottom;
+}
+.properties.list .property-title {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+.properties.list .property-excerpt {
+	display: none;
+}
+.properties.list .property-summary {
+	padding-top: 45px;
+	position: static;
+}
+
+}
+
+@media (min-width: 480px) {
+
+/* properties */
+.properties.list .hentry {
+	padding-bottom: 0;
+}
+.page-fullwidth .properties.list .property-featured {
+	width: 222px;
+}
+.page-fullwidth .properties.list .property-featured img {
+	max-height: 180px;
+}
+.page-fullwidth .properties.list .property-wrap {
+	width: calc( 100% - 222px - 170px );
+}
+
+}
+
+@media (max-width: 479px) {
+	
+/* header */
+.navbar-brand {
+	max-width: calc( 100% - 70px );
+}
+.navbar-brand .noo-logo-img {
+	height: auto;
+	max-height: 40px;
+}
+
+/* properties */
+.properties .hentry {
+	margin-bottom: 20px !important;
+}
+
+.properties.list .property-detail > div.size span {
+      background: url("assets/images/size-icon.png") no-repeat scroll 0 center transparent;
+}
+.properties.list .property-detail > div.bedrooms span {
+      background: url("assets/images/bedroom-icon.png") no-repeat scroll 0 center transparent;
+}
+.properties.list .property-detail > div.bathrooms span {
+      background: url("assets/images/bathroom-icon.png") no-repeat scroll 0 center transparent;
+}
+
+/* properties - single */
+.property .property-title {
+	width: 100%;
+	margin-bottom: 15px;
+	float: none;
+}
+.property .property-share {
+	margin-bottom: 15px;
+	float: none;
+}
+
+}
+
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-info .info-summary > div.size span {
+  background: url("assets/images/size-icon-2.png") no-repeat scroll 0 center transparent;
+}
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-info .info-summary > div.bedrooms span {
+  background: url("assets/images/bedroom-icon-2.png") no-repeat scroll 0 center transparent;
+}
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-info .info-summary > div.bathrooms span {
+  background: url("assets/images/bathroom-icon-2.png") no-repeat scroll 0 center transparent;
+}
+.recent-properties .recent-properties-content .property-row .hentry .property-detail > div.size span,
+.recent-properties.recent-properties-featured .property-detail > div.size span,
+.noo-map .gmap-infobox .info-detail > div.size span{
+  background: url("assets/images/size-icon.png") no-repeat scroll 0 center transparent;
+}
+.recent-properties .recent-properties-content .property-row .hentry .property-detail > div.bedrooms span,
+.recent-properties.recent-properties-featured .property-detail > div.bedrooms span,
+.noo-map .gmap-infobox .info-detail > div.bedrooms span
+ {
+  background: url("assets/images/bedroom-icon.png") no-repeat scroll 0 center transparent;
+}
+.recent-properties .recent-properties-content .property-row .hentry .property-detail > div.bathrooms span,
+.recent-properties.recent-properties-featured .property-detail > div.bathrooms span,
+.noo-map .gmap-infobox .info-detail > div.bathrooms span
+ {
+  background: url("assets/images/bathroom-icon.png") no-repeat scroll 0 center transparent;
+}

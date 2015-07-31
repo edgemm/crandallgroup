@@ -9,6 +9,8 @@ Thumbs.db
 # wordpress specific
 wp-config.php
 wp-content/plugins/
+wp-content/themes/noo-citilights
+wp-content/themes/noo-updated
 wp-content/themes/twentyten
 wp-content/themes/twentyeleven
 wp-content/themes/twentytwelve

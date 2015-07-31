@@ -1,0 +1,100 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">_noo_agent_position</custom-field>
+        <custom-field action="ignore">_noo_agent_email</custom-field>
+        <custom-field action="ignore">_noo_agent_phone</custom-field>
+        <custom-field action="ignore">_noo_agent_mobile</custom-field>
+        <custom-field action="ignore">_noo_agent_skype</custom-field>
+        <custom-field action="ignore">_noo_agent_facebook</custom-field>
+        <custom-field action="ignore">_noo_agent_twitter</custom-field>
+        <custom-field action="ignore">_noo_agent_google_plus</custom-field>
+        <custom-field action="ignore">_noo_agent_linkedin</custom-field>
+        <custom-field action="ignore">_noo_agent_pinterest</custom-field>
+        <custom-field action="ignore">_membership_package</custom-field>
+        <custom-field action="ignore">_user_edit</custom-field>
+        <custom-field action="ignore">_user_username</custom-field>
+        <custom-field action="ignore">_user_password</custom-field>
+        <custom-field action="translate">_label</custom-field>
+        <custom-field action="copy">_address</custom-field>
+        <custom-field action="ignore">_price</custom-field>
+        <custom-field action="translate">_price_label</custom-field>
+        <custom-field action="ignore">_area</custom-field>
+        <custom-field action="ignore">_bedrooms</custom-field>
+        <custom-field action="ignore">_bathrooms</custom-field>
+        <custom-field action="ignore">_noo_property_gmap</custom-field>
+        <custom-field action="ignore">_noo_property_gmap_latitude</custom-field>
+        <custom-field action="ignore">_noo_property_gmap_longitude</custom-field>
+        <custom-field action="ignore">_noo_property_gmap_street_view</custom-field>
+        <custom-field action="ignore">_video_embedded</custom-field>
+        <custom-field action="ignore">_gallery</custom-field>
+        <custom-field action="ignore">_agent_responsible</custom-field>
+        <custom-field action="ignore">_noo_membership_interval</custom-field>
+        <custom-field action="ignore">_noo_membership_interval_unit</custom-field>
+        <custom-field action="ignore">_noo_membership_price</custom-field>
+        <custom-field action="ignore">_noo_membership_listing_num</custom-field>
+        <custom-field action="ignore">_noo_membership_featured_num</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">noo_agent</custom-type>
+        <custom-type translate="1">noo_property</custom-type>
+        <custom-type translate="1">noo_membership</custom-type>
+        <custom-type translate="0">noo_order</custom-type>
+    </custom-types>    
+    <taxonomies>
+        <taxonomy translate="1">property_category</taxonomy>
+        <taxonomy translate="1">property_status</taxonomy>
+        <taxonomy translate="1">property_label</taxonomy>
+        <taxonomy translate="1">property_location</taxonomy>
+        <taxonomy translate="1">property_sub_location</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="noo_property_custom_filed" >
+            <key name="custom_field" >
+                <key name="0" >
+                    <key name="label" />
+                </key>
+                <key name="1" >
+                    <key name="label" />
+                </key>
+                <key name="2" >
+                    <key name="label" />
+                </key>
+                <key name="3" >
+                    <key name="label" />
+                </key>
+                <key name="4" >
+                    <key name="label" />
+                </key>
+                <key name="5" >
+                    <key name="label" />
+                </key>
+                <key name="6" >
+                    <key name="label" />
+                </key>
+                <key name="7" >
+                    <key name="label" />
+                </key>
+                <key name="8" >
+                    <key name="label" />
+                </key>
+                <key name="9" >
+                    <key name="label" />
+                </key>
+            </key>
+        </key>
+        <key name="noo_property_feature" >
+            <key name="features" >
+                <key name="0" />
+                <key name="1" />
+                <key name="2" />
+                <key name="3" />
+                <key name="4" />
+                <key name="5" />
+                <key name="6" />
+                <key name="7" />
+                <key name="8" />
+                <key name="9" />
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>
